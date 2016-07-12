@@ -1,0 +1,8 @@
+test:
+  driver: sqlite
+  open: dbname=piesebeta sslmode=disable
+
+development:
+  driver: mymysql
+#  open: user=root dbname=piesebeta sslmode=disable
+  open: tcp:127.0.0.1:3306*piesebeta/root/

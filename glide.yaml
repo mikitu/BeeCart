@@ -1,0 +1,8 @@
+package: BeeCart
+import:
+- package: github.com/astaxie/beego
+  subpackages:
+  - validation
+  - orm
+  - session
+- package: github.com/go-sql-driver/mysql

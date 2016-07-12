@@ -1,0 +1,4 @@
+appname = BeeCart
+httpport = 8085
+runmode = dev
+sessionon = true
