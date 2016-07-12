@@ -26,7 +26,22 @@
 						<a href="{{$val2.GetUrl}}">
 							<i class="fa fa-angle-double-right"></i>
 							{{$val2.Title}}
+							{{if $val2.HasSubmenu}}
+							<span class="fa arrow"></span>
+							{{end}}
 						</a>
+						{{if $val2.HasSubmenu}}
+						<ul class="sub-menu">
+							{{range $key3, $val3 := $val2.Submenu}}
+							<li>
+								<a href="{{$val3.GetUrl}}">
+									<i class="fa fa-angle-double-right"></i>
+									{{$val3.Title}}
+								</a>
+							</li>
+							{{end}}
+						</ul>
+						{{end}}
 					</li>
 					{{end}}
 				</ul>
