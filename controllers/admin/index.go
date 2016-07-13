@@ -21,6 +21,32 @@ func (this *IndexController) Get() {
         }
         break
     }
-    log.Printf("\n%+v\n\n", this.Data["admin_menu"])
+    this.GetWidgets()
+    log.Printf("\n%+v\n\n", this.Data["Widgets"])
+
 }
 
+func (this *IndexController) GetWidgets() {
+    w := new(helpers.Widgets)
+    w.Add(
+        helpers.Widget{
+            Title: "Views Today",
+            Template: "admin/widgets/views-today.tpl",
+        })
+    w.Add(
+        helpers.Widget{
+            Title: "Today's Sales",
+            Template: "admin/widgets/today-sales.tpl",
+        })
+    w.Add(
+        helpers.Widget{
+            Title: "Subscribers",
+            Template: "admin/widgets/subscribers.tpl",
+        })
+    w.Add(
+        helpers.Widget{
+            Title: "Registered Users",
+            Template: "admin/widgets/registered-users.tpl",
+        })
+    this.Data["Widgets"] = w
+}
