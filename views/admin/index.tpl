@@ -1,7 +1,7 @@
 <section class="content">
 	<div class="row">
-		{{range $key, $val := .Widgets.Items}}
-			{{template {{$val.Template}} .}}
+		{{range .Widgets.Items}}
+			{{template .Template}}
 		{{end}}
 	</div>
 	<!--/row-->
