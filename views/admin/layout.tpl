@@ -16,14 +16,16 @@
 	<aside class="right-side">
 		<!-- Main content -->
 		<section class="content-header">
-			<h1>Welcome to Dashboard</h1>
+			<h1>{{.PageTitle}}</h1>
 			<ol class="breadcrumb">
-				<li class="active">
+				<li>
 					<a href="#">
 						<i class="livicon" data-name="home" data-size="16" data-color="#333" data-hovercolor="#333"></i>
-						Home
+						Dashboard
 					</a>
 				</li>
+				<li><a href="#">Laravel Examples</a></li>
+				<li class="active">Ajax Datatables</li>
 			</ol>
 		</section>
 		{{.LayoutContent}}

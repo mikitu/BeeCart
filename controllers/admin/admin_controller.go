@@ -8,12 +8,8 @@ import (
 type AdminController struct {
     beego.Controller
 }
-
-func (adminCtrl *AdminController) InitDefaults() {
+func (adminCtrl *AdminController) Prepare() {
+    beego.SetStaticPath("/static", "static/admin")
     adminCtrl.Layout = "admin/layout.tpl"
     adminCtrl.Data["admin_menu"] = helpers.AdminMenu
-}
-
-func init() {
-    beego.SetStaticPath("/static", "static/admin")
 }

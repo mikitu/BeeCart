@@ -10,7 +10,6 @@ type IndexController struct {
 }
 
 func (this *IndexController) Get() {
-    this.InitDefaults()
     this.TplName = "admin/index.tpl"
     menuItems := this.Data["admin_menu"].(helpers.AdminMenuStruct).Items
 
