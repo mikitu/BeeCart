@@ -144,48 +144,60 @@ var menuItems = []AdminMenuItemStruct{
                 Url:    "/sales/orders",
             },
             AdminMenuItemStruct{
-                Title: "Products",
-                Url:    "/catalog/products",
+                Title: "Recuring Orders",
+                Url:    "/sales/recuring-orders",
             },
             AdminMenuItemStruct{
-                Title: "Recurring Profiles",
-                Url:    "/catalog/recuring-profiles",
+                Title: "Returns",
+                Url:    "/sales/returns",
             },
             AdminMenuItemStruct{
-                Title: "Filters",
-                Url:    "/catalog/filters",
-            },
-            AdminMenuItemStruct{
-                Title: "Attributes",
+                Title: "Customers",
                 Url:    "#",
                 Submenu: []AdminMenuItemStruct{
                     AdminMenuItemStruct{
-                        Title: "Attributes",
-                        Url:    "/catalog/attributes",
+                        Title: "Customers",
+                        Url:    "/sales/customers",
                     },
                     AdminMenuItemStruct{
-                        Title: "Attribute Groups",
-                        Url:    "/catalog/attribute-groups",
+                        Title: "Customer Groups",
+                        Url:    "/sales/customer-groups",
+                    },
+                    AdminMenuItemStruct{
+                        Title: "Custom Fields",
+                        Url:    "/sales/custom-fields",
+                    },
+                    AdminMenuItemStruct{
+                        Title: "Banned IP",
+                        Url:    "/sales/banned-ip",
                     },
                 },
             },
             AdminMenuItemStruct{
-                Title: "Options",
-                Url:    "/catalog/options",
+                Title: "Gift Vouchers",
+                Url:    "#",
+                Submenu: []AdminMenuItemStruct{
+                    AdminMenuItemStruct{
+                        Title: "Gift Vouchers",
+                        Url:    "/sales/gift-vouchers",
+                    },
+                    AdminMenuItemStruct{
+                        Title: "Voucher Themes",
+                        Url:    "/sales/voucher-themes",
+                    },
+                },
             },
             AdminMenuItemStruct{
-                Title: "Manufacturers",
-                Url:    "/catalog/manufacturers",
+                Title: "PayPal",
+                Url:    "#",
+                Submenu: []AdminMenuItemStruct{
+                    AdminMenuItemStruct{
+                        Title: "search",
+                        Url:    "/sales/paypal-search",
+                    },
+                },
             },
-            AdminMenuItemStruct{
-                Title: "Downloads",
-                Url:    "/catalog/downloads",
-            },
-            AdminMenuItemStruct{
-                Title: "Reviews",
-                Url:    "/catalog/reviews",
-            },
-        },
+       },
     },
     AdminMenuItemStruct{
         Icon:   "share",
