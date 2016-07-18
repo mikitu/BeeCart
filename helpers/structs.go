@@ -1,9 +1,16 @@
 package helpers
 
+import (
+    "html/template"
+)
+
 type Widget struct{
     Title string
     Template string
+    Data interface{}
 }
+
+var WidgetTemplates *template.Template
 
 type Widgets struct {
     Items []Widget

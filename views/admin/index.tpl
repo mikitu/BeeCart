@@ -1,7 +1,7 @@
 <section class="content">
 	<div class="row">
 		{{range .Widgets.Items}}
-			{{.Template}}
+			{{IncludeTemplate .Template .Data}}
 		{{end}}
 	</div>
 	<!--/row-->
