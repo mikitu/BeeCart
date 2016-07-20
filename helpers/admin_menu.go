@@ -2,6 +2,8 @@ package helpers
 
 type AdminMenuStruct struct {
     Items []AdminMenuItemStruct
+    CurrentUrl string
+    CurrentPath []AdminMenuItemStruct
 }
 type AdminMenuItemStruct struct {
     Icon    string
@@ -18,6 +20,56 @@ var AdminMenu = AdminMenuStruct{
     Items: menuItems,
 }
 
+func (item *AdminMenuStruct) SetCurrentUrl(url string) {
+    item.CurrentUrl = url
+}
+
+func (menu *AdminMenuStruct) GetCurrentPath() []AdminMenuItemStruct {
+    if menu.CurrentPath == nil {
+        menu.BuildCurrentPath()
+    }
+    return menu.CurrentPath
+}
+
+func (menu *AdminMenuStruct) BuildCurrentPath(){
+    var paths []AdminMenuItemStruct
+    var allPaths [][]AdminMenuItemStruct
+
+    for _, item := range(menu.Items) {
+        ch := make(chan AdminMenuItemStruct)
+        go Walk(&item, ch)
+        println("//////////////////////////////")
+        for v := range ch {
+            println(v.Title)
+            paths = append(paths, v)
+        }
+        println("//////////////////////////////")
+        allPaths = append(allPaths, paths)
+    }
+    for i, _ := range(allPaths) {
+        for _, v := range(allPaths[i]) {
+            println(v.Url , " => " , menu.CurrentUrl)
+            if v.Url == menu.CurrentUrl {
+                panic(allPaths[i])
+                menu.CurrentPath = allPaths[i]
+                return
+            }
+        }
+    }
+}
+
+func Walk(itm *AdminMenuItemStruct, ch chan AdminMenuItemStruct) {
+    _walk(itm, ch)
+    close(ch)
+}
+func _walk(itm *AdminMenuItemStruct, ch chan AdminMenuItemStruct) {
+    if itm != nil {
+        for _, item := range(itm.Submenu) {
+            _walk(&item, ch)
+            ch <- *itm
+        }
+    }
+}
 func (item AdminMenuItemStruct) GetUrl() string {
     return AdminBaseUrl + item.Url
 }
