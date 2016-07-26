@@ -1,11 +1,11 @@
 package controllers
 
-type SalesCustomersGroupsController struct {
+type SalesCustomerGroupsController struct {
 	AdminController
 }
 
-func (this *SalesCustomersGroupsController) Index() {
-    this.TplName = "admin/sales/customers_groups.tpl"
-    this.Data["PageTitle"] = "Customers Groups"
+func (this *SalesCustomerGroupsController) Index() {
+    this.TplName = "admin/sales/customer_groups.tpl"
+    this.Data["PageTitle"] = "Customer Groups"
 }
 

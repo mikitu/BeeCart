@@ -243,11 +243,11 @@ $tree = Array(
         "name" => 'Furniture',
         "slug" => 'furniture',
         "children" => Array(
-            "0" => Array
+            Array
             (
                 "name" => 'Sofa',
                 "slug" => 'sofa',
-                "leafs" => Array
+                "children" => Array
                 (
                     "0" => Array ( "name" => '3 Seater', "slug" => '3-seater'),
                     "1" => Array ( "name" => '4 Seater', "slug" => '4-seater'),
@@ -255,14 +255,30 @@ $tree = Array(
 
             ),
 
-            "1" => Array
+           Array
             (
                 "name" => 'Chairs',
                 "slug" => 'chairs',
-                "leafs" => Array
+                "children" => Array
                 (
-                    "0" => Array ( "name" => '3 Seater', "slug" => '3-seater'),
-                    "1" => Array ( "name" => '4 Seater', "slug" => '4-seater'),
+                    Array (
+                        "name" => '3 Seater',
+                        "slug" => '3-seater',
+                        "children" => Array
+                            (
+                                ["name" => '3.1 Seater', "slug" => '3.1-seater',
+                                    "children" => Array
+                                    (
+                                        ["name" => '3.2 Seater', "slug" => '3.2-seater',
+                                            "children" => Array
+                                            (
+                                                ["name" => '3.3 Seater', "slug" => '3.3-seater']
+                                            )]
+                                    )
+                                ]
+                            )
+                    ),
+                    Array ( "name" => '4 Seater', "slug" => '4-seater'),
                 )
 
             )
@@ -278,7 +294,7 @@ $tree = Array(
             "0" => Array(
                 "name" => 'Sofa1',
                 "slug" => 'sofa1',
-                "leafs" => Array(
+                "children" => Array(
                     "0" => Array ( "name" => '3 Seater1', "slug" => '3-seater1'),
                     "1" => Array ( "name" => '4 Seater1', "slug" => '4-seater1'),
                 )
@@ -288,7 +304,7 @@ $tree = Array(
             "1" => Array(
                 "name" => 'Chairs1',
                 "slug" => 'chairs1',
-                "leafs" => Array(
+                "children" => Array(
                     "0" => Array ( "name" => '3 Seater1', "slug" => '3-seater1'),
                     "1" => Array ( "name" => '4 Seater1', "slug" => '4-seater1')
                 )
@@ -299,20 +315,25 @@ $tree = Array(
 
 
 echo '<pre>';
-print_r($tree);
+//print_r($tree);
 echo '</pre>';
-$tp = new TreePaths($tree, function(array $currentPath,
-                                    $isTopALeaf)  {
 
-    $fullPath = [];
-    foreach($currentPath as $key => $node) {
-        $fullPath[] = $node;
-    }
-    return $fullPath;
-});
+$tp = new TreePaths($tree);
+//, function(array $currentPath, $isTopALeaf)  {
+//    $fullPath = [];
+//    foreach($currentPath as $key => $node) {
+//        $fullPath[] = $node;
+//    }
+//    return $fullPath;
+//});
 $tp->generate();
 $allPaths = $tp->allPaths();
 foreach($allPaths as $path) {
 
 }
-var_dump(__FILE__.__LINE__, $allPaths);
+//var_dump(__FILE__.__LINE__, $allPaths);
+foreach ($allPaths as $path) {
+//    echo "======================\n";
+    echo "\n";
+    print_r($path);
+}

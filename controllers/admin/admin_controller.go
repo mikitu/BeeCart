@@ -28,11 +28,11 @@ func IsActiveMenuItem() bool {
 func (adminCtrl *AdminController) Prepare() {
     beego.SetStaticPath("/static", "static/admin")
     adminCtrl.Layout = "admin/layout.tpl"
-    admin_menu := &helpers.AdminMenu
+    admin_menu := helpers.AdminMenu
     admin_menu.SetCurrentUrl(adminCtrl.Ctx.Input.URL())
     admin_menu.BuildCurrentPath()
     println(admin_menu.GetCurrentPath())
-    adminCtrl.Data["admin_menu"] = admin_menu
+    adminCtrl.Data["admin_menu"] = *admin_menu
 
     beego.AddFuncMap("IncludeTemplate", IncludeTemplate)
 }
