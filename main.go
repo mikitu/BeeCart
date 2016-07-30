@@ -1,14 +1,14 @@
 package main
 
 import (
-	_ "BeeCart/routers"
+	_ "github.com/mikitu/BeeCart/routers"
 	"github.com/astaxie/beego"
     "github.com/astaxie/beego/orm"
     _ "github.com/go-sql-driver/mysql"
     "os"
     "path/filepath"
     "html/template"
-    "BeeCart/helpers"
+    "github.com/mikitu/BeeCart/helpers"
 )
 
 func init() {

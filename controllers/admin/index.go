@@ -1,7 +1,7 @@
 package controllers
 
 import (
-    "BeeCart/helpers"
+    "github.com/mikitu/BeeCart/helpers"
     "log"
 )
 

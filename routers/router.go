@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"BeeCart/controllers"
-    adminControllers "BeeCart/controllers/admin"
+	"github.com/mikitu/BeeCart/controllers"
+    adminControllers "github.com/mikitu/BeeCart/controllers/admin"
 	"github.com/astaxie/beego"
     "github.com/astaxie/beego/context"
     //"github.com/astaxie/beego/plugins/auth"

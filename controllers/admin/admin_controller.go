@@ -2,7 +2,7 @@ package controllers
 
 import (
     "github.com/astaxie/beego"
-    "BeeCart/helpers"
+    "github.com/mikitu/BeeCart/helpers"
     "html/template"
     "path"
     "bytes"

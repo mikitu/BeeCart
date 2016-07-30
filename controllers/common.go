@@ -1,7 +1,7 @@
 package controllers
 
 import (
-    "BeeCart/models"
+    "github.com/mikitu/BeeCart/models"
 )
 
 type Cfg struct {
