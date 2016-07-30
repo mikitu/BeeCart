@@ -1,8 +1,10 @@
 language: go
 go:
 - '1.6'
-before_install:
-- sudo add-apt-repository ppa:masterminds/glide -y && sudo apt-get update
-- sudo apt-get install glide -y
+install:
+  - go get github.com/Masterminds/glide
+
 script:
   - glide install
+  - GO15VENDOREXPERIMENT=1 go build .
+  - GO15VENDOREXPERIMENT=1 go test $(glide novendor)
