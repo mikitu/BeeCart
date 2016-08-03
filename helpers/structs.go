@@ -30,3 +30,26 @@ func (widgets *Widgets) Find (t string) (interface{}) {
     }
     return nil
 }
+
+type Breadcrumbs struct {
+    Items []BreadcrumbsItem
+}
+func NewBreadcrumbs() (*Breadcrumbs) {
+    return new(Breadcrumbs)
+}
+func (b *Breadcrumbs) Add(title, url string) {
+    bci := new(BreadcrumbsItem)
+    bci.Title = title
+    bci.Url = url
+    println("IsActive: ", bci.IsActive())
+    b.Items = append(b.Items, *bci)
+}
+
+type BreadcrumbsItem struct {
+    Title   string
+    Url     string
+}
+
+func (bi BreadcrumbsItem) IsActive() bool {
+    return bi.Url == ""
+}

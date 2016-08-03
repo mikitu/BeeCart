@@ -31,8 +31,10 @@ func (adminCtrl *AdminController) Prepare() {
     admin_menu := helpers.AdminMenu
     admin_menu.SetCurrentUrl(adminCtrl.Ctx.Input.URL())
     admin_menu.BuildCurrentPath()
-    println(admin_menu.GetCurrentPath())
     adminCtrl.Data["admin_menu"] = *admin_menu
-
     beego.AddFuncMap("IncludeTemplate", IncludeTemplate)
+    bc := helpers.NewBreadcrumbs()
+    bc.Add("<i class=\"livicon\" data-name=\"home\" data-size=\"16\" data-color=\"#333\" data-hovercolor=\"#333\"></i>Dashboard", "/admin")
+    println(bc)
+    adminCtrl.Data["Breadcrumbs"] = bc
 }

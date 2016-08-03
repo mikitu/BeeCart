@@ -17,16 +17,7 @@
 		<!-- Main content -->
 		<section class="content-header">
 			<h1>{{.PageTitle}}</h1>
-			<ol class="breadcrumb">
-				<li>
-					<a href="#">
-						<i class="livicon" data-name="home" data-size="16" data-color="#333" data-hovercolor="#333"></i>
-						Dashboard
-					</a>
-				</li>
-				<li><a href="#">Laravel Examples</a></li>
-				<li class="active">Ajax Datatables</li>
-			</ol>
+			{{template "admin/breadcrumbs.tpl" .}}
 		</section>
 		{{.LayoutContent}}
 	</aside>
