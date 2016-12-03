@@ -48,3 +48,6 @@ fabric.properties
 
 app.conf
 vendor
+
+node_modules
+static/vendors/*
