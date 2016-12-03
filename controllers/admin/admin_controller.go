@@ -26,7 +26,7 @@ func IsActiveMenuItem() bool {
 }
 
 func (adminCtrl *AdminController) Prepare() {
-    beego.SetStaticPath("/static", "static/admin")
+    beego.SetStaticPath("/static", "static")
     adminCtrl.Layout = "admin/layout.tpl"
     admin_menu := helpers.AdminMenu
     admin_menu.SetCurrentUrl(adminCtrl.Ctx.Input.URL())

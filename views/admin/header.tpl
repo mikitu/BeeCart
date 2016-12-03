@@ -1,6 +1,6 @@
 <header class="header">
 	<a href="index.html" class="logo">
-		<img src="/static/img/logo.png" alt="Logo">
+		<img src="/static/admin/img/logo.png" alt="Logo">
 	</a>
 	<nav class="navbar navbar-static-top" role="navigation">
 		<!-- Sidebar toggle button-->
