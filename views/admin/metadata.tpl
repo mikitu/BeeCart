@@ -8,11 +8,12 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 <![endif]-->
 <!-- global css -->
-<link href="/static/admin/css/admin.css" rel="stylesheet" type="text/css" />
-<!-- font Awesome -->
-<link href="/static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="/static/admin/css/app.css" rel="stylesheet" type="text/css" />
+<!-- end of global css -->
 <!--page level css -->
-<link href="/static/vendors/fullcalendar/dist/fullcalendar.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" media="all" href="/static/vendors/jvectormap/jquery-jvectormap.css" />
-<link rel="stylesheet" href="/static/vendors/animate.css/animate.min.css">
-<!--end of page level css-->
+<link href="/static/admin/vendors/fullcalendar/css/fullcalendar.css" rel="stylesheet" type="text/css" />
+<link href="/static/admin/css/pages/calendar_custom.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="all" href="/static/admin/vendors/bower-jvectormap/css/jquery-jvectormap-1.2.2.css" />
+<link rel="stylesheet" href="/static/admin/vendors/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datetimepicker/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="/static/admin/css/pages/only_dashboard.css" />
