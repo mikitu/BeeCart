@@ -74,3 +74,35 @@
     background-color: #f9f9f9;
 
 }
+.input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn {
+    height: 29px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.input-group-addon {
+    padding: 5px 12px;
+}
+.input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+    padding:9px 16px;
+}
+.has-success .checkbox, .has-success .checkbox-inline, .has-success.checkbox-inline label, .has-success.checkbox label, .has-success .control-label, .has-success .help-block, .has-success .radio, .has-success .radio-inline, .has-success.radio-inline label, .has-success.radio label
+{
+    color: #00bc8c;
+}
+.has-warning .checkbox, .has-warning .checkbox-inline, .has-warning.checkbox-inline label, .has-warning.checkbox label, .has-warning .control-label, .has-warning .help-block, .has-warning .radio, .has-warning .radio-inline, .has-warning.radio-inline label, .has-warning.radio label {
+    color: #f89a14;
+}
+.has-error .checkbox, .has-error .checkbox-inline, .has-error.checkbox-inline label, .has-error.checkbox label, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.radio-inline label, .has-error.radio label {
+    color: #ef6f6c;
+}
+.has-success .form-control-feedback {
+    color: #00bc8c;
+}
+
+.has-warning .form-control-feedback {
+    color: #f89a14;
+}
+.has-error .form-control-feedback {
+    color: #ef6f6c;
+}
+

@@ -95,7 +95,7 @@
         $.plot("#spline-chart", [{
             data: s1,
             label: "product 1",
-            color: "#418BCA"
+            color: "#01bc8c"
         },{
             data: s2,
             label: "product 2",
@@ -165,7 +165,7 @@ $(function () {
     }, {
         label: "Total Sales",
         data: d2,
-         color: "#418BCA"
+         color: "#01bc8c"
     }];
  
    Options = {
@@ -207,7 +207,7 @@ $(function () {
         tooltip: true,
         tooltipOpts: {
             content: '%s: %y'
-        },
+        }
        
     };
  

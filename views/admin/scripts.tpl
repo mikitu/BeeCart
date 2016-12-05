@@ -26,3 +26,19 @@
 <script src="/static/admin/js/pages/todolist.js"></script>
 <script src="/static/admin/js/pages/dashboard.js" type="text/javascript"></script>
 <!-- end of page level js -->
+
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/jeditable/js/jquery.jeditable.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/dataTables.buttons.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/dataTables.colReorder.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/dataTables.rowReorder.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/buttons.colVis.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/buttons.html5.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/buttons.print.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/buttons.bootstrap.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/pdfmake.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/vfs_fonts.js"></script>
+<script type="text/javascript" src="/static/admin/vendors/datatables/js/dataTables.scroller.js"></script>
+<script type="text/javascript" src="/static/admin/js/pages/table-advanced.js"></script>

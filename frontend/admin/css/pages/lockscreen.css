@@ -1,12 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
-
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 body {
     background: top center no-repeat #477509;
     position: relative;
     display: block;
     max-width: 100%;
     width: auto;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
 }
 
 html, body {
@@ -94,7 +93,6 @@ html, body {
 
 .form-box input[type="password"] {
     border-radius: 5px;
-    border-top: 0;
 }
 
 .form-box button.login {
@@ -143,5 +141,5 @@ html, body {
 }
 
 .avatar {
-    background-image: url('../../img/img_holder/400-x-699.jpg');
+    background-image: url('../../img/authors/avatar3.jpg');
 }

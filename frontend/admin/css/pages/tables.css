@@ -1,3 +1,4 @@
+
 /***
 Responsive & Scrollable Tables
 ***/
@@ -27,7 +28,9 @@ Responsive & Scrollable Tables
     color: #333333;
     background-color: #e5e5e5;
 }
-
+.table{
+    width:100%!important;
+}
 .table-scrollable {
     width: 100%;
     overflow-x: auto;
@@ -208,8 +211,9 @@ Responsive Flip Scroll Tables
 /***
 Custom tables
 ***/
-.table-toolbar {
-    margin-bottom: 15px;
+.table-edit .panel-heading span {
+    margin-top: -7px;
+    font-size: 15px;
 }
 
 .table.table-full-width {
@@ -217,8 +221,8 @@ Custom tables
 }
 
 .table .btn {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
     margin-right: 5px;
 }
 
@@ -252,7 +256,7 @@ Custom tables
 }
 
 .table-advance tr td {
-    border-left-width: 0px;
+    border-left-width: 0;
 }
 
 .table-advance tr td:first-child {
@@ -313,14 +317,6 @@ Datatables Plugin(in v1.3)
     cursor: pointer;
     width: 14px;
     height: 14px;
-}
-
-.dataTable .row-details.row-details-close {
-    background: url("../../img/datatable-row-openclose.png") no-repeat 0 0;
-}
-
-.dataTable .row-details.row-details-open {
-    background: url("../../img/datatable-row-openclose.png") no-repeat 0 -23px;
 }
 
 .dataTable .details {
@@ -816,4 +812,43 @@ Select2 Plugin
 
 .table-hover > tbody > tr > td.active:hover, .table-hover > tbody > tr > th.active:hover, .table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr.active:hover > th {
     background-color: #92bce0;
+}
+
+table.dataTable thead .sorting_asc:after {
+    content: none; /* sort-by-attributes */
+}
+table.dataTable thead .sorting_desc:after {
+    content: none; /* sort-by-attributes-alt */
+}
+table.dataTable thead .sorting:after {
+    opacity: 0;
+    content: none; /* sort */
+}
+
+td.details-control {
+    background: url('../../img/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../../img/details_close.png') no-repeat center center;
+    cursor: pointer;
+}
+/* horizontal scrollabel */
+.row {
+    padding: 12px 15px;
+}
+.add_remove_title {
+    margin-top: 6px;
+}
+.btn-group .btn, .btn-group .btn+.btn {
+    margin-right: 8px!important;
+}
+.table .table {
+    border-bottom: 1px solid #ccc;
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {
+    border-radius: 0;
 }

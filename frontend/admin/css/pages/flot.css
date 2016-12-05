@@ -1,3 +1,5 @@
+
+
 .flotChart {
     width: 100%;
     height: 340px;
@@ -77,8 +79,4 @@
 
 }
 
-.panel-primary > .panel-heading {
-    color: #000;
-    background-color: #fff;
-    border-color: #fff;
-}
+

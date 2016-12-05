@@ -1,14 +1,16 @@
+
+
 #RGB {
     height: 20px;
     background: rgb(128, 128, 128);
 }
 
 #RC .slider-selection {
-    background: #FF8282;
+    background: #ef6f6c;
 }
 
 #RC .slider-handle {
-    background: red;
+    background: #ef6f6c;
 }
 
 #GC .slider-selection {
@@ -32,11 +34,11 @@
 }
 
 #ex1Slider .slider-selection {
-    background: #f56954;
+    background: #ef6f6c;
 }
 
 #ex1Slider .slider-handle {
-    background: #cf304b;
+    background: #ef6c6f;
 }
 
 #ex2 .slider-selection {
@@ -71,20 +73,20 @@
     background: #00bc8c;
 }
 
-#ex7 .slider-selection {
+#RED .slider-selection {
     background: #418bca;
 }
 
-#ex7 .slider-handle {
+#RED .slider-handle {
     background: #418bca;
 }
 
 #ex8 .slider-selection {
-    background: #aaaaaa;
+    background: #67C5DF;
 }
 
 #ex8 .slider-handle {
-    background: #aaa;
+    background: #67C5DF;
 }
 
 #ex9 .slider-selection {
@@ -97,4 +99,19 @@
 
 label {;
     font-weight: lighter;
+}
+.irs-bar-edge {
+    position: absolute;
+    display: block;
+    top: 25px;
+    left: 0;
+}
+.slider.slider-horizontal .slider-handle {
+    margin-left: -2px;
+}
+.btn-danger{
+    margin-left:20px;
+}
+#ex6CurrentSliderValLabel{
+    margin-left:20px;
 }

@@ -1,9 +1,11 @@
+
+
 .demo-container {
 
     width: 99%;
     height: 350px;
-    padding: 0px;
-    margin: 15px auto 0px auto;
+    padding: 0;
+    margin: 15px auto 0 auto;
 }
 
 .demo-placeholder {
@@ -20,10 +22,20 @@
 .legend table {
     border-spacing: 5px;
 }
-
 .panel-primary > .panel-heading {
-    color: #000;
     background-color: #fff;
     border-color: #fff;
 }
-
+#pie1{
+    margin-left:55px;
+}
+#pie2{
+    margin-left:55px;
+}
+#pie4{
+    margin-left: 55px;
+}
+.panel.panel-primary > .panel-heading {
+    background-color: #418bca;
+    color: #fff;
+}

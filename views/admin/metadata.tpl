@@ -17,3 +17,13 @@
 <link rel="stylesheet" href="/static/admin/vendors/animate/animate.min.css">
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datetimepicker/css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" href="/static/admin/css/pages/only_dashboard.css" />
+<!--page level css -->
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/dataTables.bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/buttons.bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/colReorder.bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/dataTables.bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/rowReorder.bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/buttons.bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/scroller.bootstrap.css" />
+<link href="/static/admin/css/pages/tables.css" rel="stylesheet" type="text/css">
+<!--end of page level css-->

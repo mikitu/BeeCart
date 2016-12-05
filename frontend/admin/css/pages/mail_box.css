@@ -1,3 +1,5 @@
+
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -30,14 +32,15 @@
 }
 
 .web-mail ul .compose {
-    background: #17a185 !important;
-    border-left: 6px solid #0f816a;
+    background: #01bc8c !important;
     margin: 20px 0;
 }
 
-.web-mail ul .compose a:hover, .web-mail ul .compose:hover {
-    background: #0f816a !important;
+.web-mail ul .compose a:hover,
+.web-mail ul .compose:hover {
+    background: #01bc8f!important;
 }
+
 
 .web-mail ul .active {
     background: #428bca !important;
@@ -47,7 +50,8 @@
     color: #FFF;
 }
 
-.web-mail ul .compose a, .web-mail ul .inbox a {
+.web-mail ul .compose a,
+.web-mail ul .inbox a {
     color: #FFF !important;
 }
 
@@ -75,8 +79,7 @@
 }
 
 input[type=checkbox] {
-    padding: 0px;
-    opacity: 100 !important;
+    padding: 0;
 }
 
 .bg-blue {
@@ -93,7 +96,6 @@ input[type=checkbox] {
 
 .whitebg {
     background: #fff;
-    border-bottom: 1px solid #bbe5ff;
 }
 
 .mail_header {
@@ -216,7 +218,7 @@ a.cke_button {
     background: -moz-linear-gradient(center top, #fff, #e4e4e4) repeat scroll 0 0 #e4e4e4;
     border-color: #ccc;
     border-image: none;
-    border-radius: 0px !important;
+    border-radius: 0 !important;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 1px 0 rgba(255, 255, 255, 0.15) inset;
@@ -277,7 +279,7 @@ tr td a {
     /* border: 1px solid transparent; */
     /* border-radius: 4px; */
     padding-right: 32px;
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 .web-mail .view-message {
@@ -346,37 +348,55 @@ button {
     margin-left: -1px;
 }
 
-/*
-.btn-default{
-	padding:0px 15px;
-	border-radius:0px;
-	float:left;
-	border-right:none;
-}
-.btn-default:hover{
-	border-color:#aaa;
-	background:#f5f5f5;
-}
-.right_border{
-	border-right:1px solid #ccc;
--webkit-border-top-right-radius: 5px;
--webkit-border-bottom-right-radius: 5px;
--moz-border-radius-topright: 5px;
--moz-border-radius-bottomright: 5px;
-border-top-right-radius: 5px;
-border-bottom-right-radius: 5px;
-}
-.left_border{
--webkit-border-top-left-radius: 5px;
--webkit-border-bottom-left-radius: 5px;
--moz-border-radius-topleft: 5px;
--moz-border-radius-bottomleft: 5px;
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
-} 
-*/
 .table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1px;
+}
+/*summer note */
+.note-editor{
+    padding-left:0px;
+}
+.note-editable{
+    height:300px;
+    width:100%;
+
+}
+.btn-default:not(.btn-link):not(.btn-flat), .btn-default:not(.btn-link):not(.btn-flat):hover, .btn:not(.btn-raised):not(.btn-link):hover.btn-default {
+    background-color: #eee !important;
+    border: 1px solid #d2d2d2;
+    color: #777!important;
+    margin: 3px;
+}
+
+/*drafts*/
+.table-hover td:nth-child(1) {
+    width: 4%
+}
+.table-hover td:nth-child(2) {
+    width: 2%;
+    center: block
+}
+.table-hover td:nth-child(3) {
+    width: 22%;
+}
+.table-hover td:nth-child(4) {
+    width: 56%
+}
+.table-hover td:nth-child(5) {
+    width: 3%
+}
+.table-hover td:nth-child(6) {
+    width: 13%
+}
+/*forward*/
+.for_footer .view-message{
+    width:13%;
+}
+.for_footer .btn_action{
+    min-width:70%;
+}
+.view{
+    font-size:18px;
+
 }

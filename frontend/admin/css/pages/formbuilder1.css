@@ -1,3 +1,5 @@
+
+
 .droppable-active {
     background-color: #ffe !important;
 }
@@ -34,7 +36,7 @@
 }
 
 .pd-col-4 {
-    padding: 0px 30px 30px 30px;
+    padding: 0 30px 30px 30px;
     background-color: #fff;
 }
 

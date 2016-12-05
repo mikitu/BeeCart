@@ -1,3 +1,5 @@
+
+
 .input-group-addon.primary {
     color: rgb(255, 255, 255);
     background-color: rgb(50, 118, 177);
@@ -42,4 +44,7 @@
 
 .mar-25 {
     margin-top: 25px;
+}
+.help-block {
+   color: #a94442;
 }

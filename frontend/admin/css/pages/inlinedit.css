@@ -1,3 +1,4 @@
+
 #comments:hover {
     background-color: #FFFFC0;
     cursor: text;
@@ -55,4 +56,17 @@ table.table > tbody > tr > td {
 .enable-btn {
     margin-right: 10px;
     margin-bottom: 8px;
+}
+.xedit_style
+{
+    margin-top: -24px;
+}
+.xedit_opt {
+    margin-top: 13px;
+    height: 29px;
+    padding-bottom: 5px;
+    color: #606060;
+}
+#frm select {
+    width: auto;
 }

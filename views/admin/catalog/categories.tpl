@@ -1,66 +1,372 @@
 <div class="row">
-	<div class="col-md-6">
-		<!-- BEGIN BORDERED TABLE PORTLET-->
-		<div class="portlet box danger">
-			<div class="portlet-title">
-				<div class="caption">
-					<i class="livicon" data-name="list" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i>
-					Category List
+	<div class="col-lg-12">
+		<div class="panel panel-primary filterable">
+			<div class="panel-heading clearfix  ">
+				<div class="panel-title pull-left">
+					<div class="caption">
+						<i class="livicon" data-name="camera" data-size="16" data-loop="true" data-c="#fff" data-hc="white"></i> TableTools
+					</div>
 				</div>
+				<div class="tools pull-right"></div>
 			</div>
-			<div class="portlet-body">
-				<div class="table-scrollable">
-					<table class="table table-bordered table-hover">
-						<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-							<th>Last Name</th>
-							<th>Username</th>
-							<th>Status</th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<td rowspan="2">1</td>
-							<td>Airi Satou</td>
-							<td>Kelly</td>
-							<td>Satou124</td>
-							<td>
-								<span class="label label-sm label-success">Approved</span>
-							</td>
-						</tr>
-						<tr>
-							<td>Angelica</td>
-							<td>Ramos</td>
-							<td>Angelica343</td>
-							<td>
-								<span class="label label-sm label-info">Pending</span>
-							</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Ashton</td>
-							<td>Cox</td>
-							<td>Cox111</td>
-							<td>
-								<span class="label label-sm label-warning">Suspended</span>
-							</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Bradley</td>
-							<td>Greer</td>
-							<td>Bradley</td>
-							<td>
-								<span class="label label-sm label-danger">Blocked</span>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
+			<div class="panel-body table-responsive">
+				<table class="table table-striped table-bordered" id="table1">
+					<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>User Name</th>
+						<th>
+							User E-mail
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>Markotto</td>
+						<td>
+							Markotto@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>
+							JacobThornton
+						</td>
+						<td>
+							JacobThornton@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>
+							Larrythe Bird
+						</td>
+						<td>
+							LarrytheBird@test.com
+						</td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-		<!-- END BORDERED TABLE PORTLET-->
 	</div>
 </div>

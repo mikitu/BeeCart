@@ -1,3 +1,4 @@
+
 .toggler-left {
     float: left;
     width: 80%;
@@ -22,7 +23,7 @@
 }
 
 .panel-primary > .panel-heading {
-    color: #000;
-    background-color: #fff;
-    border-color: #fff;
+    background-color: #418bca;
+    color: #fff;
+    border-color: #E7E1E8;
 }

@@ -1,3 +1,4 @@
+
 /*news  custom code*/
 h4 {
     font-size: 16px;
@@ -59,4 +60,12 @@ h3 {
     width: 100%;
     position: relative;
     z-index: 1;
+}
+/*heading of recent news*/
+.recent-news{
+    margin-left:12px;
+}
+/* news option heading*/
+.news-option{
+    margin-left:14px;
 }

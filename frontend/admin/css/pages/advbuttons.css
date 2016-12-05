@@ -1,3 +1,4 @@
+
 /* flatbuttons */
 
 li {
@@ -6,7 +7,7 @@ li {
 
 .flatbuttons {
     width: 100%;
-    margin: 0px;
+    margin: 0;
     padding-left: 4%;
     text-align: center;
 }
@@ -30,15 +31,14 @@ li {
 .flatbuttons div {
     clear: both;
     padding-top: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 /* flatbuttons for small width. */
 
 .flatbuttons_small {
     width: 100%;
-    margin: 0px;
-    padding-left: 0%;
+    padding-left: 0;
     text-align: center;
     margin: -20px;
 }
@@ -66,8 +66,8 @@ li {
 
 .flatbuttons_size {
     width: 100%;
-    margin: 0px;
-    padding-left: 0%;
+    margin: 0;
+    padding-left: 0;
     text-align: center;
 }
 
@@ -107,7 +107,6 @@ a, a:hover {
 /*quick icons*/
 
 .panel-body .btn:not(.btn-block) {
-    width: 120px;
     margin-bottom: 10px;
 }
 
@@ -336,7 +335,8 @@ a.vimeo:hover * {
     margin-left: 0;
     border-top-left-radius: .25em;
     border-bottom-left-radius: .25em;
-    padding-right: 15px
+    padding-right: 15px;
+    padding-left:6px;
 }
 
 .ui-group-buttons .btn:last-child {
@@ -785,3 +785,134 @@ a.vimeo:hover * {
 .btn {
     margin-bottom: 10px;
 }
+
+.button-primary, .button-primary:hover, .button-primary:focus {
+    background-color: #418BCA;
+
+}
+
+.button-warning, .button-warning:hover, .button-warning:focus {
+    background-color: #F89A14;
+    color: #fff!important;
+}
+
+.button-success, .button-success:hover, .button-success:focus {
+    background-color: #01BC8C;
+    color: #ffffff!important;
+}
+
+.button-info, .button-info:hover, .button-info:focus {
+    background-color: #67C5DF;
+    color: #fff!important;
+}
+
+.button-danger, .button-danger:hover, .button-danger:focus {
+    background-color: #EF6F6C;
+    color: #ffffff!important;
+}
+
+.button-default, .button-default:hover, .button-default:focus {
+    background-color: #A9B6BC;
+    color: #424242;
+}
+.button-success:hover{
+    background-color: #01a379;
+    color:#fff !important;
+}
+.button-primary:hover{
+   background-color: #107baf;
+    color:#fff !important;
+}
+.button-danger:hover{
+    color:#fff !important;
+}
+.button-info:hover{
+    color:#fff !important;
+}
+.button-warning:hover{
+    color:#fff !important;
+}
+.button-default:hover{
+    color:#fff !important;
+}
+
+
+.button-large.button-circle {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 24px;
+}
+
+.button-border.button-primary, .button-border.button-primary:hover, .button-border.button-primary:focus {
+    border: 1px solid #418BCA;
+    background-color: #fff;
+    color: #418BCA !important;
+}
+
+.button-border.button-success, .button-border.button-success:hover, .button-border.button-success:focus {
+    border: 1px solid #01BC8C !important;
+    background-color: #fff;
+    color: #01BC8C !important;
+}
+
+.button-border.button-info, .button-border.button-info:hover, .button-border.button-info:focus {
+    border: 1px solid #67C5DF;
+    background-color: #fff;
+    color: #67C5DF !important;
+}
+
+.button-border.button-warning, .button-border.button-warning:hover, .button-border.button-warning:focus {
+    border: 1px solid #F89A14;
+    background-color: #fff;
+    color: #F89A14 !important;
+}
+
+.button-border.button-danger, .button-border.button-danger:hover, .button-border.button-danger:focus {
+    border: 1px solid #EF6F6C;
+    background-color: #fff;
+    color: #EF6F6C !important;
+}
+
+.button-border.button-default, .button-border.button-default:hover, .button-border.button-default:focus {
+    border: 1px solid #A9B6BC;
+    background-color: #fff;
+    color: #A9B6BC !important;
+}
+
+.list-inline {
+    margin-left: 5% !important;
+}
+
+.list-inline li {
+    margin-bottom: 10px;
+}
+.button-dropdown-list {
+    top: 100%;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+}
+.button-3d {
+    position: relative;
+    top: 0;
+    box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2) !important;
+}
+.btn-icon-right span {
+    left: 14px;
+}
+.label-text {
+    position: relative;
+    top: 5px;
+    right:5px;
+}
+.button {
+    padding:0 32px;
+}
+svg:not(:root) {
+    overflow: hidden;
+
+}
+.label-right{
+    left:5px !important;
+}
+

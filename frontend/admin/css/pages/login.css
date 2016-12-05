@@ -4,12 +4,11 @@ body {
     background: #dfdfdf;
     position: relative;
     display: block;
-    font-family: 'lato';
+    font-family: 'Lato', sans-serif;
 }
 
 #container_demo {
     text-align: left;
-    margin: 0;
     padding: 0;
     margin: 0 auto;
 }
@@ -21,22 +20,18 @@ a.hiddenanchor {
 /** The wrapper that will contain our two forms **/
 #wrapper {
     width: 100%;
-    right: 0px;
+    right: 0;
     min-height: 560px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 /**** Styling the form elements **/
 
 /**** general text styling ****/
-#wrapper a {
-    color: rgb(95, 155, 198);
-    text-decoration: underline;
-}
 
 #wrapper h3 {
     font-size: 30px;
-    padding: 0px 0 10px 0;
+    padding: 0 0 10px 0;
     text-align: center;
     /** For the moment only webkit supports the background-clip:text; */
     -webkit-background-clip: text;
@@ -47,7 +42,7 @@ a.hiddenanchor {
     display: block;
     width: 100%;
     height: 2px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #wrapper p {
@@ -55,7 +50,7 @@ a.hiddenanchor {
 }
 
 #wrapper p:first-child {
-    margin: 0px;
+    margin: 0;
 }
 
 #wrapper label {
@@ -79,9 +74,9 @@ input {
 
 /* all the input except submit and checkbox */
 #wrapper input:not([type="checkbox"]) {
-    width: 86%;
+    width: 90%;
     margin-top: 4px;
-    padding: 10px 5px 10px 26px;
+    padding: 9px 6px 9px 22px;
     border: 1px solid rgb(178, 178, 178);
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
@@ -90,9 +85,9 @@ input {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(168, 168, 168, 0.6) inset;
+    -moz-box-shadow: 0 1px 4px 0 rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0 1px 4px 0 rgba(168, 168, 168, 0.6) inset;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -101,9 +96,9 @@ input {
 
 #wrapper input:not([type="checkbox"]):active, #wrapper input:not([type="checkbox"]):focus {
     border: 1px solid #3d8b3d;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
-    -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(168, 168, 168, 0.9) inset;
+    -moz-box-shadow: 0 1px 4px 0 rgba(168, 168, 168, 0.9) inset;
+    box-shadow: 0 1px 4px 0 rgba(168, 168, 168, 0.9) inset;
     outline-color: #3d8b3d;
 }
 
@@ -143,17 +138,17 @@ p.login.button, p.signin.button {
 /** Styling both forms **/
 #register, #login, #forgot {
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 90%;
     padding: 18px 6% 20px 6%;
     margin: 0 0 35px 0;
-    padding-top: 0px;
-    margin-top: 0px;
+    padding-top: 0;
+    margin-top: 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
-    -webkit-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
-    -moz-box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
-    box-shadow: 0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+    -webkit-box-shadow: 0 2px 5px rgba(105, 108, 109, 0.7), 0 0 8px 5px rgba(208, 223, 226, 0.4) inset;
+    -moz-box-shadow: 0 2px 5px rgba(105, 108, 109, 0.7), 0 0 8px 5px rgba(208, 223, 226, 0.4) inset;
+    box-shadow: 0 2px 5px rgba(105, 108, 109, 0.7), 0 0 8px 5px rgba(208, 223, 226, 0.4) inset;
     -webkit-box-shadow: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -393,7 +388,7 @@ p.login.button, p.signin.button {
 
 .button input {
     font-size: 18px;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {

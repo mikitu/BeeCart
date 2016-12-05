@@ -1,3 +1,4 @@
+
 /*Blog  custom code*/
 
 .featured-post-wide {
@@ -97,7 +98,7 @@ h3 {
 
 .fileupload .uneditable-input {
     display: inline-block;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     vertical-align: middle;
     cursor: text;
 }
@@ -160,7 +161,7 @@ h3 {
 }
 
 .padding_bottom_none {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .bootstrap-select .btn {
@@ -189,6 +190,34 @@ h3 {
 }
 
 .nopadleftright {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*add new blog */
+/*summer note */
+.note-editable{
+    height:300px;
+    width:100%;
+}
+.breadcrumb>.active {
+    color: #777;
+}
+/*blog category list panel*/
+.panel-title {
+    margin-top: 5px;
+}
+
+/*news_details*/
+
+.media-dotted > li{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 18px;
+}
+.media-dotted > li:last-child{
+    border-bottom: 1px solid white;
+}
+.btn-default:not(.btn-link):not(.btn-flat) {
+    background-color: #eee !important;
+    border: 1px solid #d2d2d2;
+    color: #333 !important;
 }

@@ -1,3 +1,4 @@
+
 .bs-glyphicons {
     padding-left: 0;
     padding-bottom: 1px;
@@ -42,7 +43,7 @@
 }
 
 .border {
-    border: sold 1px white !important;
+    border: solid 1px white !important;
 }
 
 .l1 {
@@ -102,8 +103,4 @@
 
 .pad-10 {
     padding-bottom: 10px;
-}
-
-li:hover, i:hover {
-    color: #67C5DF;
 }

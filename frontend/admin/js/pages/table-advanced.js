@@ -1,12 +1,18 @@
- $(document).ready(function() {
+$(document).ready(function() {
+    try {
         //table tools example
-        var table = $('#table1').DataTable();
-        var tt = new $.fn.dataTable.TableTools(table,{"sSwfPath": "vendors/datatables/extensions/TableTools/swf/copy_csv_xls.swf"});
-        
-        $('div.tools').append(tt.fnContainer());
+        var table = $('#table1').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+
 
         //re-order columns
-        var table2 = $('#table2').dataTable();
+        var table2 = $('#table2').dataTable({
+            responsive: true
+        });
 
         new $.fn.dataTable.ColReorder(table2);
 
@@ -15,14 +21,15 @@
         var table3 = $('#table3').DataTable({
             "order": [
                 [0, "desc"]
-            ]
+            ],
+            responsive: true
         });
         //total number of existing rows
         var counter = 18;
 
 
         //row addition code
-        $('#addButton').on('click', function() {
+        $('#addButton').on('click', function () {
             table3.row.add([
                 counter,
                 counter + ' new',
@@ -36,7 +43,7 @@
 
         //row deletion code
 
-        $('#table3 tbody').on('click', 'tr', function() {
+        $('#table3 tbody').on('click', 'tr', function () {
             if ($(this).hasClass('danger')) {
                 $(this).removeClass('danger');
             } else {
@@ -45,20 +52,38 @@
             }
         });
 
-        $('#delButton').click(function() {
+        $('#delButton').click(function () {
             if (!$("#table3 tr").hasClass('danger')) {
                 alert('please select a row first');
                 //exit;
             }
             table3.row('.danger').remove().draw(false);
         });
+    } catch (e) {}
+});
+$('#sample_5').dataTable( {
 
-    });
- $(document).ready(function() {
-    $('#sample_5').dataTable( {
-        
-        "scrollY": "200px",
-        "dom": "frtiS",
-        "deferRender": true
-    } );
+    "scrollY": "200px",
+    "dom": "frtiS",
+    "deferRender": true,
+    responsive:true
+});
+
+$(document).ready(function() {
+    var oTable;
+    /* Apply the jEditable handlers to the table */
+    $('#inline_edit tbody td').editable( function( sValue ) {
+        /* Get the position of the current data from the node */
+        var aPos = oTable.fnGetPosition( this );
+
+        /* Get the data array for this row */
+        var aData = oTable.fnGetData( aPos[0] );
+
+        /* Update the data array and return the value */
+        aData[ aPos[1] ] = sValue;
+        return sValue;
+    }, { "onblur": 'submit' } ); /* Submit the form when bluring a field */
+
+    /* Init DataTables */
+    oTable = $('#inline_edit').dataTable();
 } );

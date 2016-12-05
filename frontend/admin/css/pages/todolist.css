@@ -36,7 +36,6 @@
 }
 
 .todolist input {
-    padding: 2px;
     border-radius: 5px;
     font-size: 14px;
     padding-left: 15px;
@@ -122,10 +121,28 @@ input[type=checkbox] {
 
 .todoitem {
     padding-top: 5px;
-    float: left;
 }
 
 .todoitembtns {
     padding-top: 5px;
     text-align: right;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #ca0002;
+}
+.list1{
+    padding: 5px 5px 8px 4px;
+}
+.bootstrap-datetimepicker-widget{
+    top:auto;
+    bottom:45px!important;
+}
+.cust_text1{
+    min-width: 100%;
+    margin-top: 15px;
+}
+.add_button{
+    margin-top: 15px;
 }

@@ -1,3 +1,5 @@
+
+
 /* calendar custome code */
 .pallete-item {
     width: 140px;
@@ -258,7 +260,6 @@
 
 /* Custom calendar */
 .external-event {
-    margin: 10px 0;
     padding: 3px 5px;
     border-radius: 2px;
     cursor: pointer;
@@ -271,4 +272,11 @@
     line-height: 1.6em;
     color: #666;
     margin-left: 10px;
+}
+.fc-basic-view .fc-day-number {
+    padding: 0 19px;
+}
+.dropdown-menu {
+    padding:0 ;
+
 }
