@@ -39,14 +39,14 @@ func NewBreadcrumbs() (*Breadcrumbs) {
 }
 func (b *Breadcrumbs) Add(title, url string) {
     bci := new(BreadcrumbsItem)
-    bci.Title = title
+    bci.Title = template.HTML(title)
     bci.Url = url
     println("IsActive: ", bci.IsActive())
     b.Items = append(b.Items, *bci)
 }
 
 type BreadcrumbsItem struct {
-    Title   string
+    Title   template.HTML
     Url     string
 }
 
