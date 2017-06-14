@@ -13,7 +13,7 @@ import (
 
 func init() {
     orm.RegisterDriver("mysql", orm.DRMySQL)
-    orm.RegisterDataBase("default", "mysql", "root:@/piesebeta?charset=utf8")
+    orm.RegisterDataBase("default", "mysql", "piesebeta:1@/beecart?charset=utf8")
     orm.Debug = true
     cwd, _ := os.Getwd()
 
@@ -27,7 +27,7 @@ func init() {
         return err
     }
     err := filepath.Walk(fpath, walk)
-    if (err != nil) {
+    if err != nil {
         panic(err)
     }
     helpers.WidgetTemplates, _ = template.ParseFiles(paths...)

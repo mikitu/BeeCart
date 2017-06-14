@@ -4,7 +4,7 @@ $(document).ready(function() {
         var table = $('#table1').DataTable({
             dom: 'Bfrtip',
             buttons: [
-                'copy', 'csv', 'excel', 'pdf', 'print'
+                'add'
             ]
         });
 

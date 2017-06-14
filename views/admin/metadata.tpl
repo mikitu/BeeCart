@@ -17,7 +17,6 @@
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/dataTables.bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/buttons.bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/colReorder.bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/dataTables.bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/rowReorder.bootstrap.css">
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/buttons.bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="/static/admin/vendors/datatables/css/scroller.bootstrap.css" />
