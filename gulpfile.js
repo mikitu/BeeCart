@@ -4,10 +4,15 @@ var uglify = require('gulp-uglify');
 var minify = require('gulp-minify-css');
 
 gulp.task('js', function(){
-    // gulp.src('frontend/admin/js/*.js')
-    //     .pipe(concat('admin.js'))
-    //     .pipe(uglify())
-    //     .pipe(gulp.dest('static/admin/js'));
+    gulp.src([
+            'frontend/admin/js/jquery.min.js',
+            'frontend/admin/js/!(jquery.min|dashboard).js',
+            'frontend/admin/js/dashboard.js'
+        ]
+    )
+        .pipe(concat('admin.js'))
+        // .pipe(uglify())
+        .pipe(gulp.dest('static/admin/js'));
 });
 
 gulp.task('css', function(){
